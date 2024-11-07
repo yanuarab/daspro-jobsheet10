@@ -17,10 +17,11 @@ public class Bioskop25modif {
     System.out.println("Panjang baris 3: " + penonton[2].length); 
     System.out.println("Panjang baris 4: " + penonton[3].length);
 
-   System.out.println(penonton.length);
-   for (int i = 0; i < penonton.length; i++) {
-    System.out.println("Panjang baris ke-" + (i+1) + ": " + penonton[i].length);
-   }
+    System.out.println("Panjang array penonton: " + penonton.length);
+    int baris = 1; for (String[] row : penonton) {
+    System.out.println("Panjang baris ke-" + baris + ": " + row.length);
+     baris++;
+    }
 
    System.out.printf("%s \t %s \n", penonton[0][0], penonton[0][1]);
    System.out.printf("%s \t %s \n", penonton[1][0], penonton[1][1]);
